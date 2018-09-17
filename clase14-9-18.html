@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+</head>
+
+<body>
+    <p>
+        <div class="row">
+            <ul id="lista" class="test">
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+                <li>cuatro</li>
+                <li>cinco</li>
+            </ul>
+            <button onclick="BorreF()">Borre</button>
+        </div>
+        <div class="col-10">
+            <input type="text" id="texto-entrada">
+        </div>
+        <div class="col-2">
+            <button onclick="agregarItem()">AGREGAR</button>
+        </div>
+    </p>
+</body>
+
+<script>
+    function BorreF() {
+        document.getElementsByClassName("test")[0].children[0].remove();
+
+    }
+
+    function agregarItem() {
+        var textoEntrada = document.getElementById("lista").value;
+        console.log(typeof textoEntrada)
+
+        console.log("Se ejecutò la función uno")
+        var nodo = document.createElement("li");
+
+        var textoNodo = document.createTextNode("Elemento de una lista");
+
+        nodo.appendChild(textoNodo);
+
+        document.getElementById("lista").appendChild(nodo)
+    }
+</script>
+
+</html>

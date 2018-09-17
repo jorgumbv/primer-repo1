@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="contenedor-uno">
+        <p>
+            <h1><strong> ETIQUETAS </strong></h1>
+            <h2><em>ETIQUETA H</em></h2><br> Estamos aprendiendo <strong><em>html</em></strong> en este curso. Toda etiqueta que se abre se debe cerrar.<br> Con la etiqueta <strong>H</strong> podemos realizar enbabezados de diferentes tamaños donde <em>h1</em>            es la mas grande. Para resaltar una palabra usamos la etiqueta <strong>strong</strong>, para letra inclinada usamos la etiqueta <strong><em>em</em></strong>.
+            <br>Con la etiqueta <strong>br</strong> hacemos el salto de linea no hay necesidad de cerrarla.
+            <h3> Tipos de listas</h3><br> Para crear una lista ordenada usamos la etiqueta <strong>ol</strong>, y la etiqueta <strong>li</strong> para cada item.
+
+            <ol>
+
+                <h4>Listas Ordenadas</h4>
+                <li>html </li>
+                <li>css</li>
+                <li>js</li>
+            </ol>
+        </p>
+    </div>
+    <div id="contenedor-dos">
+
+        Para crear una lista no numerada usamos la etiqueta <strong>ul</strong>, y la etiqueta <strong>li</strong> para cada item.
+
+        <ul>
+            <h4>Listas sin Ordenar</h4>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+        </ul>
+    </div>
+    <div id="contenedor-tres">
+        <p>Con la etiqueta <strong>a</strong> relacionamos <strong><em>url</em></strong> e <strong><em>imagenes></em></strong></p>
+
+        <a href="https://codigofacilito.com/articulos/que-es-html">html</a><br><br>
+        <a><img src="images/512px-HTML5_logo_and_wordmark.svg.png"><br>Image html</a><br>
+        <a href="mailto:maurgomr@hotmail.com? subject=feedback">email me</a><br>
+        <a href="pagina1.html" target="_blank">"download="</a>
+
+    </div>
+    <div id="contenedor-cuatro">
+        <p>
+            <h3>Etiquetas de Estructura</h3>
+            Se usan para realizar tablas<br>La etiqueta <strong>table</strong> nos sirve para generar tablas. Con la etiqueta <strong>tr</strong> abrimos la tabla y se crea la fila, cola <strong>td</strong> formamos las columnas.
+            <table border="1" , cell-padding="0" , cell-spacing="0">
+                <tr>
+                    <td>Codigo</td>
+                    <td>Producto</td>
+                    <td>Valor</td>
+                </tr>
+                <tr>
+                    <td>c001</td>
+                    <td>PC</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>c002</td>
+                    <td>Pantalla</td>
+                    <td>70000</td>
+                </tr>
+                <tr>
+                    <td>c003</td>
+                    <td>Teclado</td>
+                    <td>50000</td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    <div id="contenedor-cinco">
+        <p>
+            <h3>Etiquetas de Formulario</h3>
+            Se usan para realizar formularios<br>La etiqueta <strong>form</strong> nos sirve para generar el formulario. Con la etiqueta <strong>fielset</strong> configura la opcion para ingresar datos, con la etiqueta <strong>label</strong> generamos
+            el campo a solicitar. Con la etiqueta <strong>imput</strong> damos la opcion de ingresar por teclado el dato. Con <strong>option</strong> ingresamos opciones.
+            <form name="formContacto" autocomplete="on">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>Diligenciar Datos Basicos</p>
+                    <label for="Nombre">NOMBRE: </label>
+                    <input type="text" id="Nombre">
+                    <label for="Correo">CORREO: </label>
+                    <input type="text" id="Correo">
+                    <label for="Edad">EDAD: </label>
+                    <input type="number" id="Edad">
+                    <label for="Genero">GENERO: </label>
+                    <b>Masculino</b><input type="radio" name="Genero">
+                    <b>Femenino</b><input type="radio" name="Genero">
+                    <label for="Ocupacion">OCUPACION: </label>
+                    <select>
+                            <option>Seleccione una Opcion</option>
+                            <option>Estudiante</option>
+                            <option>Trabajador</option>
+                        </select>
+                    <label for="Comentarios">COMENTARIOS: </label>
+                    <textarea name="name" rows="8" cols="40"></textarea>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar Formulario">
+                </fieldset>
+
+
+            </form>
+
+        </p>
+    </div>
+
+</body>
+
+</html>
