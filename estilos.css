@@ -1,0 +1,45 @@
+body {
+    background: #CCEEFF;
+}
+
+#contenedor-uno {
+    border: 1px solid green;
+    background: #FFFF00;
+    padding: 10px 35px 45px;
+    font-family: arial;
+    font-size: 15px;
+    width: 70%;
+}
+
+#contenedor-dos {
+    border: 1px solid green;
+    background: #81F79F;
+    padding: 10px 35px 45px;
+    font-family: arial;
+    font-size: 15px;
+    width: 70%;
+}
+
+#contenedor-tres {
+    align: center;
+    border: 1px solid green;
+    background: #D8D8D8;
+    padding: 10px 35px 45px;
+    width: 70%;
+}
+
+#contenedor-cuatro {
+    align: center;
+    border: 1px solid green;
+    background: #f0D8D8;
+    padding: 10px 35px 45px;
+    width: 70%;
+}
+
+#contenedor-cinco {
+    align: center;
+    border: 1px solid green;
+    background: #C0D8D8;
+    padding: 10px 35px 45px;
+    width: 70%;
+}
